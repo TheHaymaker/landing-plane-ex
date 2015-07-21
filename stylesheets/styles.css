@@ -1,0 +1,76 @@
+body {
+	background-color: black;
+}
+
+header {
+	width: 100%;
+	height: auto;
+}
+
+.logo, .btn {
+	display: inline-block;
+	width: 30%;
+	height: auto;
+}
+
+.btn {
+	float: right;
+}
+
+
+div.btn img {
+	width: 60%;
+	float: right;
+	background-color: rgba(42, 43, 45, 0.27);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+div.btn img:hover {
+  background-color: rgba(197, 121, 47, 0.7);
+}
+
+
+img.logo {
+	background-color: rgba(27, 27, 27, 0.27);
+  padding: 8px;
+  padding-bottom: 4px;
+  border-radius: 10px 10px 2px 2px;
+}
+
+img.logo:hover {
+	background-color: rgba(0, 157, 224, 0.7);
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+ 
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+ 
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+ 
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+
+}
